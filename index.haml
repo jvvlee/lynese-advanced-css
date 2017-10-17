@@ -1,75 +1,62 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title></title>
-    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Fascinate+Inline" rel="stylesheet">
-    <link href='./css/reset.css' media='screen' rel='stylesheet'>
-    <link href='./css/style.css' media='screen' rel='stylesheet'>
-  </head>
-  <body>
-    <div id='content'>
-      <h1>First Project</h1>
-      <div class='quote'>
-        <div class="text">
-          If every porkchop were perfect we wouldn’t have hotdogs!
-          <br>
-          - Steven Universe
-        </div>
-      </div>
+!!! 5
+%html
+  %head
+    %title= "Haml demo"
+    %link{ :href => "./css/style.css", :media => "screen", :rel => "stylesheet" }
+  %body
+    %h1 First Project
 
-      <p>
+    .quote
+      If every porkchop were perfect we wouldn’t have hotdogs!
+      %br
+      Steven Universe
+
+    .content
+      %p
         Hi Lynese. For your first unofficial project, I’d like to get to know you a little better in your own words. So for this project, I want you to to make a stylized “About Me” document with Markdown (The markup used in this document here!). Markdown is commonly used to stylize Readme files in Github (If you don’t know what that is, don’t worry!). Since good documentation is the cornerstone of any project, I thought it would be fitting to start here :) I’ll make a small example using myself as the subject below.
-      </p>
-      <p>
+
+      %p
         If you want to see what a document with Markdown is intended to look like, [Check out this link!](https://jbt.github.io/markdown-editor/#) Copy and paste the contents of this entire document into the gray text-editor part of the page! I would recommend even using the editor to help you with this assignment (But don’t forget to save!)
-      </p>
-      <h2>
+
+      %h2
         Food for thought for this assignment
-      </h2>
-      <ul>
-        <li>
+
+      %ul
+        %li
           Tell me about what you’re passionate about, from what I know of you it seems you are very politically active. Are there any causes that near and dear to you?
-        </li>
-        <li>
+        %li
           What are some skills you’d like to develop? Projects you have in mind?
-        </li>
-        <li>
+        %li
           I noticed you know some python. I used to do some basic python ages ago, so I’m not terribly proficient. My skills are primarily in Ruby and the web framework Ruby-on-rails. However, something that might be fun for the both of us is learning Django together, a web-framework that uses python. What would you think about this?
-        </li>
-      </ul>
-      <hr>
-      <h2>
+
+      %hr
+
+      %h2
         About Me
-      </h2>
-      <img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAknAAAAJDdkNmRmMmYwLTZlMDctNDA2OC1hYTJkLWNhNmU5MmY5ZDc2NQ.jpg">
-      <p>
+
+      %img{src: "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAknAAAAJDdkNmRmMmYwLTZlMDctNDA2OC1hYTJkLWNhNmU5MmY5ZDc2NQ.jpg"}
+
+      %p
         I was born in Manhasset, New York to recently-immigrated Chinese parents. Manhasset was a WASPy quiet town and I never really felt at home there. I always preferred to go visit my cousins who lived in Queens, they would always take me on fun trips to the zoos and museums in New York. I always appreciated the vibrancy and diversity of Manhattan, and from a young age I knew I wanted to get out there.
-      </p>
-      <p>
+
+      %p
         School was tough for me growing up. I felt unmotivated most of the time and kept getting into trouble for being “disruptive” in class. I treated school like an inconvenience up until around the time I came out in middle school, however, I don’t think it was so much the inspirational “weight off my shoulders” that inspired me to try harder so much as the (worsening) bullying that followed. I knew that if I was going to try and live a life that I wanted to live, I was going to have to work harder to make that life for myself. This also planted the seed for my activism, because I began to understand how my sexual and racial identity affected how people treated me.
-      </p>
-      <p>
+
+      %p
         When I finally broke free of my hometown and went to college in the city, a lot things started to change for me. I originally studied biology in college with the plan of going to medical school, after a large number of (stressful) hours spent between a genetics laboratory and hospital emergency room in my junior year, I decided to drop medicine (to my parent’s disappointment, but to my relief). During college, I had volunteered for an organization called “Queers for Economic Justice” and it got me more interested in hands-on activism. I managed to find my way to a program in DC where I worked as an intern for the office of Senator Tammy Baldwin with 3 other inspiring people (who I still consider close friends).
-      </p>
-      <p>
+
+      %p
         After college, I still floated around without any solid idea of what I wanted to do. However, after seeing so many people gravitating towards technology I decided to give it a shot. I went to a coding bootcamp to learn Ruby-on-rails and afterwards, landed my current job at <a href="http://www.juicyorange.com">Juicyorange</a>. Here, I build out features for our existing website portfolio and manage our Amazon-backed servers. In the future, I hope to be able to merge my interest in biology and development by working for a health technology company.
-      </p>
-      <hr>
-      <h2>
+
+      %hr
+      
+      %h2
         Two Truths and a Lie
-      </h2>
-      <ul class='twotruths'>
-        <li>
+
+      %ul.twotruths
+        %li
           While working in the Senate I accidentally ate the senator’s birthday cake before she was able to have a bite
-        </li>
-        <li>
+        %li
           I read tarot cards and it made me popular at parties
-        </li>
-        <li>
+        %li
           My first jiu-jitsu lesson was in a derelict queer nightclub taught by a dominatrix
-        </li>
-      </ul>
-    </div>
-  </body>
-</html>
